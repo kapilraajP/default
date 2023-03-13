@@ -1,5 +1,14 @@
 import ballerina/io;
 
-public function main() {
-    io:println("Hello, World!");
+configurable string id = ?;
+configurable string name = "aaa";
+configurable float secret = ?;
+configurable boolean isAvailable = ?;
+
+public function main() returns error? {
+    io:println(id);
+    io:println(name);
+    io:println(secret);
+    io:println(isAvailable);
+    io:println("Successful!");
 }
