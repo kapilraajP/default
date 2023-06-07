@@ -1,6 +1,6 @@
 import ballerina/io;
 
-map<string> configName = ?;
+configurable map<string> configName = ?;
 
 public function main() returns error? {
     io:println(configName);
